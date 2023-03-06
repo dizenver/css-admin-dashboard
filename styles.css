@@ -142,7 +142,7 @@ grid-template-areas:
   width: 35px;
   height: 35px;
   border-radius: 50px;
-  background-image: url(/img/profile-pic.jpeg);
+  background-image: url(img/profile-pic.jpeg);
   background-size: cover;
   background-position: top;
 }
@@ -157,7 +157,7 @@ grid-template-areas:
   border-radius: 12px;
   height: 25px;
   border: 0;
-  background-color: lightblue;
+  background-color: var(--white);
 }
 
 .account-header {
@@ -187,7 +187,7 @@ grid-template-areas:
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-image: url(/img/profile-pic.jpeg);
+  background-image: url(img/profile-pic.jpeg);
   background-size: cover;
 }
 
@@ -342,16 +342,16 @@ hr {
 }
 
 .trending1 {
-  background-image: url(/img/trending1.jpeg);
+  background-image: url(img/trending1.jpeg);
 }
 .trending2 {
-  background-image: url(/img/trending2.jpeg);
+  background-image: url(img/trending2.jpeg);
 }
 .trending3 {
-  background-image: url(/img/trending3.jpeg);
+  background-image: url(img/trending3.jpeg);
 }
 .trending4 {
-  background-image: url(/img/trending4.jpeg);
+  background-image: url(img/trending4.jpeg);
 }
 
 .trending-user__info {
