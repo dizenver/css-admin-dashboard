@@ -55,9 +55,13 @@ table {
 /*General Layout */
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .container {
@@ -123,8 +127,8 @@ grid-template-areas:
 }
 
 .top-header__profile-pic {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border-radius: 50px;
   background-image: url(https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
   background-size: cover;
@@ -191,6 +195,7 @@ button {
 /* Page Content */
 .page-content {
   background: gray;
+  height: 95%;
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 20px;
@@ -198,10 +203,11 @@ button {
 
 .content-left {
   background: gainsboro;
+  display: grid;
+  grid-template-rows: 20px 1fr;
 }
 
 .projects {
-  height: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(auto-fit, 1fr);
@@ -215,14 +221,16 @@ button {
   padding: 20px;
   display: grid;
   grid-template-rows: 1fr 10%;
+  border-left: 8px solid yellowgreen;
 }
+
 
 .project-details h3 {
   font-size: 16px;
   font-weight: 500;
 }
 
-.project-details p {
+.project-details p, .announcement-card p {
   font-size: 12px;
   font-weight: 300;
 }
@@ -239,12 +247,71 @@ button {
   background: lightblue;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
 
-.announcement-section {
+.announcements-section {
   background: lightcoral;
+  display: grid;
+  grid-template-rows: 20px 1fr;
 }
+
+.announcements {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+
+}
+.announcement-card p {
+  font-size: 10px;
+}
+
+
 
 .trending-section {
   background: lightgreen;
+  display: grid;
+  grid-template-rows: 20px 1fr;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.trending-user {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.trending-user__pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-image: url(https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+  background-size: cover;
+}
+
+.trending-user__info {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 5px;
+}
+
+.trending-user__handle {
+  font-weight: 500;
+  font-size: 12px;
+}
+.trending-user__name {
+  font-size: 12px;
+  font-weight: 300;
 }
