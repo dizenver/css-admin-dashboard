@@ -65,6 +65,11 @@ table {
 /*General Layout */
 
 h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h3 {
   font-size: 16px;
   font-weight: 500;
 }
@@ -72,6 +77,11 @@ h2 {
 h4 {
   font-size: 12px;
   font-weight: 500;
+}
+
+p {
+  font-size: 12px;
+
 }
 
 .container {
@@ -196,6 +206,10 @@ grid-template-areas:
   margin-bottom: 5px;
 }
 
+.account-info__user {
+  font-size: 16px;
+}
+
 .account-actions {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -208,7 +222,7 @@ button {
   color: var(--white);
   font-size: 12px;
   height: 30px;
-  width: 70px;
+  width: 6rem;
   border-radius: 15px;
   border: 0;
 }
@@ -218,7 +232,7 @@ button {
   background:var(--dark-blue);
   height: 95%;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 300px;
   padding: 20px;
 }
 
@@ -229,8 +243,8 @@ button {
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
   gap: 20px;
   padding-right: 20px;
   margin-top: 10px;
@@ -246,12 +260,6 @@ button {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
 }
 
-
-.project-details h3 {
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .project-title {
   margin-bottom: 5px;
 }
@@ -262,7 +270,6 @@ button {
 
 .project-details p, .announcement-card p {
   color: var(--light-gray);
-  font-size: 12px;
   font-weight: 300;
 }
 
@@ -300,16 +307,9 @@ button {
   margin-bottom: 5px;
 }
 
-.announcement-card p {
-  font-size: 10px;
-}
-
-
 hr {
   width: 100%;
 }
-
-
 
 .trending-section {
   display: grid;
@@ -363,9 +363,50 @@ hr {
 
 .trending-user__handle {
   font-weight: 500;
-  font-size: 12px;
 }
 .trending-user__name {
-  font-size: 12px;
   font-weight: 300;
+}
+
+
+@media (min-width: 1500px) {
+  h2 {
+    font-size: 22px;
+  }
+  
+  p, h4 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  .announcements p {
+  font-size: 12px;
+  }
+  .account-info__user {
+    font-size: 20px;
+  }
+
+  .account-info__introduction {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .account-info__profile-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  .account-welcome {
+    gap: 30px;
+  }
+
+  button {
+    font-size: 16px;
+    height: 35px;
+    width: 8rem;
+    border-radius: 20px;
+    border: 0;
+  }
 }
