@@ -1,0 +1,250 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General Layout */
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.container {
+display: grid;
+height: 100vh;
+grid-template-columns: 225px 1fr;
+grid-template-areas:
+  "sidebar main";
+}
+
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-rows: 50px auto 1fr;
+  gap: 50px;
+  background: blue;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo-container {
+  font-size: 24px;
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  grid-template-columns: 25px 1fr;
+}
+
+.nav ul, .account-options ul {
+  display: grid;
+  gap: 20px;
+}
+
+.nav ul > li, .account-options ul > li {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 30px;
+}
+
+.main {
+  grid-area: main;
+  background: white;
+  display: grid;
+  grid-template-rows: 150px 1fr;
+
+}
+
+/* Header */
+.header {
+  background: white;
+  display: grid;
+  padding: 20px;
+}
+
+.top-header {
+  background: firebrick;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.top-header__profile-pic {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background-image: url(https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+}
+
+.search input {
+  border-radius: 10px;
+  border: 0;
+  background-color: lightblue;
+}
+
+.account-header {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+}
+
+/*Account Info */
+.account-info {
+  background: maroon;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.account-welcome {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+}
+
+.account-info__profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url(https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+  background-size: cover;
+}
+
+.account-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: end;
+  align-items: center;
+}
+
+button {
+  background-color: blue;
+  height: 30px;
+  width: 80px;
+  border-radius: 15px;
+  border: 0;
+}
+
+/* Page Content */
+.page-content {
+  background: gray;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px;
+}
+
+.content-left {
+  background: gainsboro;
+}
+
+.projects {
+  height: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.project-card {
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 10%;
+}
+
+.project-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.project-details p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.project-actions {
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  gap: 20px;
+  justify-content: end;
+}
+
+/* Right Sidebar */
+.content-right {
+  background: lightblue;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.announcement-section {
+  background: lightcoral;
+}
+
+.trending-section {
+  background: lightgreen;
+}
