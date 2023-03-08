@@ -1,214 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
-  <script src="https://kit.fontawesome.com/7c4ae43d23.js" crossorigin="anonymous"></script>
-  <title>Diztodev Dashboard</title>
-</head>
-<body>
-  <div class="container">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/7c4ae43d23.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Diztodev Dashboard</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="sidebar">
+				<div class="logo-container">
+					<i class="fa-solid fa-code"></i>
+					<div class="logo-name">diztodev</div>
+				</div>
 
-    <div class="sidebar">
-      <div class="logo-container">
-        <i class="fa-solid fa-code"></i>
-        <div class="logo-name">diztodev</div>
-      </div>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="#"
+								><i class="fa-sharp fa-solid fa-house"></i>
+								<div>Home</div></a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa-regular fa-address-card"></i>
+								<div>Profile</div></a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa-solid fa-message"></i>
+								<div>Messages</div></a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa-sharp fa-solid fa-clock"></i>
+								<div>History</div></a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa-solid fa-list-check"></i>
+								<div>Tasks</div></a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa-solid fa-users"></i>
+								<div>Communities</div></a
+							>
+						</li>
+					</ul>
+				</div>
 
-      <div class="nav">
-        <ul>
-          <li><i class="fa-sharp fa-solid fa-house"></i><div>Home</div></li>
-          <li><i class="fa-regular fa-address-card"></i><div>Profile</div></li>
-          <li><i class="fa-solid fa-message"></i><div>Messages</div></li>
-          <li><i class="fa-sharp fa-solid fa-clock"></i><div>History</div></li>
-          <li><i class="fa-solid fa-list-check"></i><div>Tasks</div></li>
-          <li><i class="fa-solid fa-users"></i><div>Communities</div></li>
-        </ul>
-      </div>
+				<div class="account-options">
+					<ul>
+						<li>
+							<a href=""
+								><i class="fa-solid fa-gear"></i>
+								<div>Settings</div></a
+							>
+						</li>
+						<li>
+							<a href=""
+								><i class="fa-solid fa-circle-question"></i>
+								<div>Support</div></a
+							>
+						</li>
+						<li>
+							<a href=""
+								><i class="fa-solid fa-shield-halved"></i>
+								<div>Privacy</div></a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-      <div class="account-options">
-        <ul>
-          <li><i class="fa-solid fa-gear"></i><div>Settings</div></li>
-          <li><i class="fa-solid fa-circle-question"></i><div>Support</div></li>
-          <li><i class="fa-solid fa-shield-halved"></i><div>Privacy</div></li>
-        </ul>
-      </div>
-    </div>
+			<div class="main">
+				<!--Header-->
+				<div class="header">
+					<div class="top-header">
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							<input type="search" />
+						</div>
+						<div class="account-header">
+							<i class="fa-regular fa-bell"></i>
+							<div class="top-header__profile-pic"></div>
+							<div class="top-header__username">Logan Rivers</div>
+						</div>
+					</div>
+					<div class="account-info">
+						<div class="account-welcome">
+							<div class="account-info__profile-pic"></div>
+							<div class="account-info__name-handle">
+								<p class="account-info__introduction">Hi There,</p>
+								<p class="account-info__user">Logan Rivers (@logan)</p>
+							</div>
+						</div>
+						<div class="account-actions">
+							<a href="#"><button>New</button></a>
+							<a href="#"><button>Upload</button></a>
+							<a href="#"><button>Share</button></a>
+						</div>
+					</div>
 
-    <div class="main">
-      <!--Header-->
-      <div class="header">
-        <div class="top-header">
-          <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search">
-          </div>
-          <div class="account-header">
-            <i class="fa-regular fa-bell"></i>
-            <div class="top-header__profile-pic"></div>
-            <div class="top-header__username">Logan Rivers</div>
-          </div>
-        </div>
-        <div class="account-info">
-          <div class="account-welcome">
-            <div class="account-info__profile-pic"></div>
-            <div class="account-info__name-handle">
-              <p class="account-info__introduction">Hi There,</p>
-              <p class="account-info__user">Logan Rivers (@logan)</p>
-            </div>
-          </div>
-          <div class="account-actions">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-          </div>
-        </div>
+					<!--Content-->
+				</div>
+				<div class="page-content">
+					<div class="content-left">
+						<h2>Your Projects</h2>
+						<div class="projects">
+							<div class="project-card">
+								<div class="project-details">
+									<h3 class="project-title">Code Honors App</h3>
+									<p class="project-desc">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Aliquid sit autem non praesentium nemo. Sequi id similique
+										modi inventore nostrum.
+									</p>
+								</div>
+								<div class="project-actions">
+									<i class="fa-regular fa-star"></i>
+									<i class="fa-regular fa-eye"></i>
+									<i class="fa-sharp fa-solid fa-code-fork"></i>
+								</div>
+							</div>
+							<div class="project-card">
+								<div class="project-details">
+									<h3 class="project-title">Honeycomb App</h3>
+									<p class="project-desc">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Aliquid sit autem non praesentium nemo. Sequi id similique
+										modi inventore nostrum.
+									</p>
+								</div>
+								<div class="project-actions">
+									<i class="fa-regular fa-star"></i>
+									<i class="fa-regular fa-eye"></i>
+									<i class="fa-sharp fa-solid fa-code-fork"></i>
+								</div>
+							</div>
+							<div class="project-card">
+								<div class="project-details">
+									<h3 class="project-title">Quicksilver App</h3>
+									<p class="project-desc">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Aliquid sit autem non praesentium nemo. Sequi id similique
+										modi inventore nostrum.
+									</p>
+								</div>
+								<div class="project-actions">
+									<i class="fa-regular fa-star"></i>
+									<i class="fa-regular fa-eye"></i>
+									<i class="fa-sharp fa-solid fa-code-fork"></i>
+								</div>
+							</div>
+							<div class="project-card">
+								<div class="project-details">
+									<h3 class="project-title">Zen Design App</h3>
+									<p class="project-desc">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Aliquid sit autem non praesentium nemo. Sequi id similique
+										modi inventore nostrum.
+									</p>
+								</div>
+								<div class="project-actions">
+									<i class="fa-regular fa-star"></i>
+									<i class="fa-regular fa-eye"></i>
+									<i class="fa-sharp fa-solid fa-code-fork"></i>
+								</div>
+							</div>
+							<div class="project-card">
+								<div class="project-details">
+									<h3 class="project-title">Sleekful UI</h3>
+									<p class="project-desc">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Aliquid sit autem non praesentium nemo. Sequi id similique
+										modi inventore nostrum.
+									</p>
+								</div>
+								<div class="project-actions">
+									<i class="fa-regular fa-star"></i>
+									<i class="fa-regular fa-eye"></i>
+									<i class="fa-sharp fa-solid fa-code-fork"></i>
+								</div>
+							</div>
+							<div class="project-card">
+								<div class="project-details">
+									<h3 class="project-title">True Deco App</h3>
+									<p class="project-desc">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Aliquid sit autem non praesentium nemo. Sequi id similique
+										modi inventore nostrum.
+									</p>
+								</div>
+								<div class="project-actions">
+									<i class="fa-regular fa-star"></i>
+									<i class="fa-regular fa-eye"></i>
+									<i class="fa-sharp fa-solid fa-code-fork"></i>
+								</div>
+							</div>
+						</div>
+					</div>
 
-        <!--Content-->
-      </div>
-      <div class="page-content">
-        <div class="content-left">
-          <h2>Your Projects</h2>
-          <div class="projects">
-            <div class="project-card">
-              <div class="project-details">
-                <h3 class="project-title">Code Honors App</h3>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit autem non praesentium nemo. Sequi id similique modi inventore nostrum.</p>
-              </div>
-              <div class="project-actions">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-sharp fa-solid fa-code-fork"></i>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-details">
-                <h3 class="project-title">Honeycomb App</h3>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit autem non praesentium nemo. Sequi id similique modi inventore nostrum.</p>
-              </div>
-              <div class="project-actions">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-sharp fa-solid fa-code-fork"></i>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-details">
-                <h3 class="project-title">Quicksilver App</h3>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit autem non praesentium nemo. Sequi id similique modi inventore nostrum.</p>
-              </div>
-              <div class="project-actions">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-sharp fa-solid fa-code-fork"></i>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-details">
-                <h3 class="project-title">Zen Design App</h3>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit autem non praesentium nemo. Sequi id similique modi inventore nostrum.</p>
-              </div>
-              <div class="project-actions">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-sharp fa-solid fa-code-fork"></i>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-details">
-                <h3 class="project-title">Sleekful UI</h3>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit autem non praesentium nemo. Sequi id similique modi inventore nostrum.</p>
-              </div>
-              <div class="project-actions">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-sharp fa-solid fa-code-fork"></i>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-details">
-                <h3 class="project-title">True Deco App</h3>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit autem non praesentium nemo. Sequi id similique modi inventore nostrum.</p>
-              </div>
-              <div class="project-actions">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-sharp fa-solid fa-code-fork"></i>
-              </div>
-            </div>
+					<div class="content-right">
+						<div class="announcements-section">
+							<h2>Announcements</h2>
+							<div class="announcements">
+								<div class="announcement-card">
+									<h4>Site Maintenance</h4>
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Sunt reiciendis dolores unde!
+									</p>
+								</div>
+								<hr />
+								<div class="announcement-card middle-announcement">
+									<h4>Commuinity Share Day</h4>
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Sunt reiciendis dolores unde!
+									</p>
+								</div>
+								<hr />
+								<div class="announcement-card">
+									<h4>Updated Privacy Policy</h4>
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Sunt reiciendis dolores unde!
+									</p>
+								</div>
+							</div>
+						</div>
 
-          </div>
-        </div>
+						<div class="trending-section">
+							<h2>Trending</h2>
+							<div class="trending">
+								<div class="trending-user">
+									<div class="trending-user__pic trending1"></div>
+									<div class="trending-user__info">
+										<p class="trending-user__handle">@jacob</p>
+										<p class="trending-user__name">Cyber Pulse</p>
+									</div>
+								</div>
 
-        <div class="content-right">
-          <div class="announcements-section">
-            <h2>Announcements</h2>
-            <div class="announcements">
-              <div class="announcement-card">
-                <h4>Site Maintenance</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis dolores unde!</p>
-              </div>
-              <hr>
-              <div class="announcement-card middle-announcement">
-                <h4>Commuinity Share Day</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis dolores unde!</p>
-              </div>
-              <hr>
-              <div class="announcement-card">
-                <h4>Updated Privacy Policy</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis dolores unde!</p>
-              </div>
-            </div>
-          </div>
+								<div class="trending-user">
+									<div class="trending-user__pic trending2"></div>
+									<div class="trending-user__info">
+										<p class="trending-user__handle">@elle</p>
+										<p class="trending-user__name">Streamify</p>
+									</div>
+								</div>
 
-          <div class="trending-section">
-            <h2>Trending</h2>
-            <div class="trending">
-              <div class="trending-user">
-                <div class="trending-user__pic trending1"></div>
-                <div class="trending-user__info">
-                  <p class="trending-user__handle">@jacob</p>
-                  <p class="trending-user__name">Cyber Pulse</p>
-                </div>
-              </div>
+								<div class="trending-user">
+									<div class="trending-user__pic trending3"></div>
+									<div class="trending-user__info">
+										<p class="trending-user__handle">@zak</p>
+										<p class="trending-user__name">Evolve Designs</p>
+									</div>
+								</div>
 
-              <div class="trending-user">
-                <div class="trending-user__pic trending2"></div>
-                <div class="trending-user__info">
-                  <p class="trending-user__handle">@elle</p>
-                  <p class="trending-user__name">Streamify</p>
-                </div>
-              </div>
-
-              <div class="trending-user">
-                <div class="trending-user__pic trending3"></div>
-                <div class="trending-user__info">
-                  <p class="trending-user__handle">@zak</p>
-                  <p class="trending-user__name">Evolve Designs</p>
-                </div>
-              </div>
-
-              <div class="trending-user">
-                <div class="trending-user__pic trending4"></div>
-                <div class="trending-user__info">
-                  <p class="trending-user__handle">@aniela</p>
-                  <p class="trending-user__name">NetworkFlow</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-
-    </div>
-  </div>
-</body>
+								<div class="trending-user">
+									<div class="trending-user__pic trending4"></div>
+									<div class="trending-user__info">
+										<p class="trending-user__handle">@aniela</p>
+										<p class="trending-user__name">NetworkFlow</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
